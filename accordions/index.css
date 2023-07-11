@@ -8,6 +8,9 @@ body{
 }
 
 .accordion{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     font-size: inherit;
     background-color: #eee;
     color: #444;
@@ -22,6 +25,17 @@ body{
 
 .active, .accordion:hover {
     background-color: #ccc;
+}
+
+.accordion:after {
+    content: '\002B'; /* Unicode character for "plus" sign (+) */
+    font-size: 1.5em;
+    color: #444;
+    float: right;
+}
+  
+.active:after {
+    content: "\2212"; /* Unicode character for "minus" sign (-) */
 }
 
 .panel {
