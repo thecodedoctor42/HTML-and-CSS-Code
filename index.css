@@ -2,31 +2,3 @@
     box-sizing: border-box;
     font-family: sans-serif;
 }
-
-body{
-    margin: 0;
-}
-
-.accordion{
-    font-size: inherit;
-    background-color: #eee;
-    color: #444;
-    cursor: pointer;
-    padding: 1em;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-}
-
-.active, .accordion:hover {
-    background-color: #ccc;
-}
-
-.panel {
-  padding: 0 1em;
-  background-color: white;
-  overflow: hidden;
-  display:none;
-}
