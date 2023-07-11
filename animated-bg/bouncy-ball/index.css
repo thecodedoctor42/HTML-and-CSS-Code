@@ -19,24 +19,25 @@ body{
 .ball-container{
     display: flex;
     justify-content: center;
-    height: 5.5vw;
+    position: absolute;
+    left: 47.5vw;
+    bottom: 47.5vh;
+    height: 5vw;
     width: 5.5vw;
 }
 
 .ball{
-    position: relative;
+    position: absolute;
+    bottom: 0;
     height: 5vw;
     width: 5vw;
-    left: 47.5vw;
-    right: 47.5vw;
-    top: 47.5vh;
-    bottom: 47.5vh;
     background-color: #ff1a66;
     border-radius: 50%;
     animation: bounce 1s infinite;
 }
 
 .shadow-container{
+    border: none;
     position: absolute;
     display: flex;
     justify-content: center;
@@ -65,14 +66,14 @@ body{
         width: 4vw;
     }
     50%{
-        height: 2.5vw;
+        height: 3vw;
         width: 5.5vw;
-        transform: translateY(47.5vh);
+        transform: translateY(48vh);
         animation-timing-function: cubic-bezier(0.15,0.73,0.36,0.97);
     }
     75%{
         height: 5vw;
-        width: 5.5vw;
+        width: 5vw;
     }
     100%{
         transform: translateY(0vh);
@@ -92,8 +93,8 @@ body{
         background-color: rgba(0, 0, 0, 0.693);
     }
     100%{
-        width: 2vw;
-        height: 1vw;
+        width: 1.5vw;
+        height: 0.5vw;
         background-color: rgba(0, 0, 0, 0.348);
     }
 }
